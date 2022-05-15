@@ -1,5 +1,5 @@
 import { Action, AnyAction } from 'redux';
-import { createMyActions } from '../Lib/ReduxActions';
+import { createMyActions } from '../ReduxActions';
 
 type ItemScreenReducerActionsType = {
     setCurrentPage: (currentPage: number) => AnyAction;
