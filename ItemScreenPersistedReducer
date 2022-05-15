@@ -54,11 +54,11 @@ const resetState = (
     return applyNewState(INITIAL_STATE);
 };
 
-const recordingsListScreenPersisted = createReducer(INITIAL_STATE, {
-    [convertActionToName(RecordingsListScreenActions.setRecordedItems)]: setRecordedItems,
-    [convertActionToName(RecordingsListScreenActions.setIsRecordingDisabledForAllItems)]:
+const itemScreenPersisted = createReducer(INITIAL_STATE, {
+    [convertActionToName(ItemScreenActions.setRecordedItems)]: setRecordedItems,
+    [convertActionToName(ItemScreenActions.setIsRecordingDisabledForAllItems)]:
         setIsRecordingDisabledForAllItems,
-    [convertActionToName(RecordingsListScreenActions.resetState)]: resetState
+    [convertActionToName(ItemScreenActions.resetState)]: resetState
 });
 
-export { recordingsListScreenPersisted };
+export { itemScreenPersisted };
