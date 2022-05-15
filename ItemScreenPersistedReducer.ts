@@ -2,7 +2,7 @@ import Immutable from 'seamless-immutable';
 import { Action } from 'redux';
 import { createReducer } from 'CreateReducer';
 import type { ApplyStateFunction } from 'CreateReducer';
-import { convertActionToName, ItemScreenActions } from '../Actions';
+import { convertActionToName, ItemScreenActions } from './Actions';
 
 export type RecordedItem = {
     itemId: string;
