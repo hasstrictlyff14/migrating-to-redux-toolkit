@@ -1,8 +1,8 @@
 import Immutable from 'seamless-immutable';
 import { Action } from 'redux';
-import { createReducer } from './Services/CreateReducer';
-import type { ApplyStateFunction } from './Services/CreateReducer';
-import { convertActionToName, ItemScreenReducerActions } from '../Actions';
+import { createReducer } from './CreateReducer';
+import type { ApplyStateFunction } from './CreateReducer';
+import { convertActionToName, ItemScreenReducerActions } from './Actions';
 
 type ItemScreenReducerState = {
     currentPage: number;
