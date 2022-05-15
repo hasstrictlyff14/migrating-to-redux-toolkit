@@ -1,9 +1,9 @@
 import { combineReducers, Store } from 'redux';
 import React from 'react';
-import configureStore from './Services/CreateStore';
+import configureStore from '.CreateStore';
 import rootSaga from '../Sagas/index';
 
-import { updateWhitelist } from '../Config/ReduxPersist';
+import { updateWhitelist } from './ReduxPersist';
 
 import { itemScreen } from './ItemScreenReducer';
 import { itemScreenPersisted } from './ItemScreenPersistedReducer';
