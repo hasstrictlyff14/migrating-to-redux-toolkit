@@ -4,7 +4,7 @@ import { createReducer } from './Services/CreateReducer';
 import type { ApplyStateFunction } from './Services/CreateReducer';
 import { convertActionToName, ItemScreenActions } from '../Actions';
 
-type RecordedItem = {
+export type RecordedItem = {
     itemId: string;
     recordingCount: number;
 };
