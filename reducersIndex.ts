@@ -5,13 +5,13 @@ import rootSaga from '../Sagas/index';
 
 import { updateWhitelist } from '../Config/ReduxPersist';
 
-import { recordingsListScreen } from './RecordingListScreenReducer';
-import { recordingsListScreenPersisted } from './RecordingsListScreenPersistedReducer';
+import { itemScreen } from './ItemScreenReducer';
+import { itemScreenPersisted } from './ItemScreenPersistedReducer';
 
 // To make a reducer be persisted, simply provide the word "persisted" in the createReducer function that gets exported
 const reducers = {
-    recordingsListScreen,
-    recordingsListScreenPersisted
+    itemScreen,
+    itemScreenPersisted
 };
 
 const getPersistedProperties = () =>
